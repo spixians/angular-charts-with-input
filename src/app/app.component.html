@@ -1,0 +1,24 @@
+<form (ngSubmit)="onSubmit()" class="form-horizontal" #f="ngForm">
+    <div class="col col-md-3"><label for="Component Type" class=" form-control-label">Component Type</label></div>
+        <div class="col-12 col-md-9">
+            <select name="year" id="year" class="form-control" ngModel required >
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+
+            </select>
+        </div>
+    <div class="form-actions form-group" ><button type="submit" class="btn btn-success btn-sm">Submit</button></div>
+</form>
+<!-- <input type="text" class ="form-control" (input)="setYear($event)" > -->
+
+<div id="chartContainer" style="height: 370px; width: 100%; margin-left:auto;margin-right:auto;"></div>
